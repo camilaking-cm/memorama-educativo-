@@ -26,8 +26,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     <html lang="es">
       <body className="min-h-screen antialiased">
         <header className="border-b border-slate-200 bg-white">
-          <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3" aria-label="Principal">
-            <Link className="font-bold text-slate-950" href="/">Pares Didacticos</Link>
+          <nav className="mx-auto flex max-w-6xl items-center justify-between gap-4 bg-[#112645] px-4 py-3" aria-label="Principal">
+            <Link className="font-extrabold text-white" href="/">Pares Didácticos</Link>
             <div className="flex items-center gap-3 text-sm">
               {authenticated ? (
                 <>
@@ -44,8 +44,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
                 </>
               ) : (
                 <>
-                  <Link className="rounded-md border border-slate-300 px-3 py-2 text-slate-800 hover:bg-slate-50" href="/login">Entrar</Link>
-                  <Link className="rounded-md bg-emerald-700 px-3 py-2 font-semibold text-white hover:bg-emerald-800" href="/registro">Registrarme</Link>
+                  <Link className="rounded-md border border-black bg-[#f8e71c] px-3 py-2 text-black hover:bg-[#e5d51a]" href="/login">Entrar</Link>
+                  <Link className="rounded-md border border-black bg-[#f8e71c] px-3 py-2 font-semibold text-black hover:bg-[#e5d51a]" href="/registro">Registrarme</Link>
                 </>
               )}
             </div>
