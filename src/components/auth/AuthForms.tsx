@@ -28,7 +28,7 @@ export function LoginForm() {
     <form action={formAction} className="grid gap-4">
       <Feedback state={state} />
       <Field label="Correo" name="email" type="email" required autoComplete="email" />
-      <Field label="Contrasena" name="password" type="password" required autoComplete="current-password" minLength={8} />
+      <Field label="Contraseña" name="password" type="password" required autoComplete="current-password" minLength={8} />
       <SubmitButton>Iniciar sesion</SubmitButton>
     </form>
   );
@@ -41,7 +41,7 @@ export function RegisterForm() {
       <Feedback state={state} />
       <Field label="Nombre completo" name="fullName" required autoComplete="name" />
       <Field label="Correo" name="email" type="email" required autoComplete="email" />
-      <Field label="Contrasena" name="password" type="password" required autoComplete="new-password" minLength={8} />
+      <Field label="Contraseña" name="password" type="password" required autoComplete="new-password" minLength={8} />
       <SubmitButton>Crear cuenta</SubmitButton>
     </form>
   );
