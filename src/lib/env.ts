@@ -52,7 +52,7 @@ export function getBuilderApiKey() {
 }
 
 export const appMeta = {
-  name: "Pares Didacticos",
+  name: "Pares Didácticos",
   description: "Plantilla de juego de memoria educativo con temas, dificultad, historial y ranking.",
   projectId: "memorama"
 };

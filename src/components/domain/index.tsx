@@ -221,9 +221,9 @@ function useMemoryData(enabled = true) {
 
 export function DomainLanding({ title, description, requireLogin = false }: { title: string; description: string; requireLogin?: boolean }) {
   return (
-    <main className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="text-4xl font-bold">{title}</h1>
-      <p className="mt-3 max-w-2xl text-slate-700">{description}</p>
+    <main className="mx-auto max-w-6xl bg-[#112645] px-4 py-10">
+      <h1 className="font-montserrat text-4xl font-black text-[#f8e71c]">{title}</h1>
+      <p className="font-montserrat mt-3 max-w-2xl text-white">{description}</p>
       <section className="mt-8">
         <MemoryGame requireLogin={requireLogin} />
       </section>
@@ -627,7 +627,7 @@ export function MemoryGame({
           onClick={goToLogin}
           aria-label="Iniciar sesion para jugar"
         >
-          <span className="rounded-md border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-lg">
+          <span className="rounded-md border border-black bg-[#f8e71c] px-4 py-3 text-sm font-semibold text-black shadow-lg">
             Inicia sesion para jugar
           </span>
         </button>
